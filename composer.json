@@ -1,0 +1,35 @@
+{
+  "name": "mo3golom/laravel-service-skeleton",
+  "description": "Make a Service skeleton",
+  "license": "MIT",
+  "keywords": [
+    "mo3golom",
+    "laravel-service-skeleton"
+  ],
+  "authors": [
+    {
+      "name": "Ilya Ponamarev",
+      "email": "ponamarev95@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "mo3golom\\LaravelServiceSkeleton\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mo3golom\\LaravelServiceSkeleton\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.2-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
