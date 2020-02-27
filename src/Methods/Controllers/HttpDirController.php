@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelServiceSkeleton\Methods\Controllers;
+namespace mo3golom\LaravelServiceSkeleton\Methods\Controllers;
 
 class HttpDirController extends DirController
 {

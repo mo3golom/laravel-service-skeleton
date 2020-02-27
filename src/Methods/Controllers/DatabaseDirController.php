@@ -1,14 +1,15 @@
 <?php
 
 
-namespace LaravelServiceSkeleton\Methods\Controllers;
+namespace mo3golom\LaravelServiceSkeleton\Methods\Controllers;
 
 class DatabaseDirController extends DirController
 {
     protected $path = 'Database';
     protected $subPaths = [
         'Migrations',
-        'Model',
-        'Repository'
+        'Models',
+        'Repository',
+        'Seeds'
     ];
 }

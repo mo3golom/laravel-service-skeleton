@@ -1,11 +1,10 @@
 <?php
 
 
-namespace LaravelServiceSkeleton\Methods\Controllers;
+namespace mo3golom\LaravelServiceSkeleton\Methods\Controllers;
 
-
-use LaravelServiceSkeleton\Methods\Controllers\Contracts\DirControllerInterface;
-use LaravelServiceSkeleton\Methods\Contracts\DirInterface;
+use mo3golom\LaravelServiceSkeleton\Methods\Controllers\Contracts\DirControllerInterface;
+use mo3golom\LaravelServiceSkeleton\Methods\Contracts\DirInterface;
 
 abstract class DirController implements DirControllerInterface
 {
@@ -23,11 +22,10 @@ abstract class DirController implements DirControllerInterface
     public function check()
     {
         $fullPath = $this->root . '/' . $this->path;
-        if ($this->dir->check($fullPath)) {
-            foreach ($this->subPaths as $subPath) {
-                $fullSubPath = $fullPath . '/' . $subPath;
-                $this->dir->check($fullSubPath);
-            }
+        $this->dir->check($fullPath);
+        foreach ($this->subPaths as $subPath) {
+            $fullSubPath = $fullPath . '/' . $subPath;
+            $this->dir->check($fullSubPath);
         }
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LaravelServiceSkeleton\Methods\Controllers\Contracts;
+namespace mo3golom\LaravelServiceSkeleton\Methods\Controllers\Contracts;
 
 
 interface DirControllerInterface

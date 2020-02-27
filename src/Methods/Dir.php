@@ -1,18 +1,22 @@
 <?php
 
-namespace LaravelServiceSkeleton\Methods;
+namespace mo3golom\LaravelServiceSkeleton\Methods;
 
-use LaravelServiceSkeleton\Methods\Contracts\DirInterface;
+use mo3golom\LaravelServiceSkeleton\Methods\Contracts\DirInterface;
 
 class Dir implements DirInterface
 {
-    public function check(string $dir): bool
+    /**
+     * @param string $dir
+     * @throws \Exception
+     */
+    public function check(string $dir)
     {
         if (!file_exists($dir)) {
-            return $this->create($dir);
+            $this->create($dir);
         }
 
-        return true;
+
     }
 
     function create(string $dir): bool

@@ -26,8 +26,15 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "0.2-dev"
+    "extra": {
+      "branch-alias": {
+        "dev-master": "0.6.0-dev"
+      },
+      "laravel": {
+        "providers": [
+          "mo3golom\\LaravelServiceSkeleton\\LaravelServiceSkeletonServiceProvider"
+        ]
+      }
     }
   },
   "minimum-stability": "dev",
