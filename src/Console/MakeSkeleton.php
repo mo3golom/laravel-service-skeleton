@@ -48,7 +48,7 @@ class MakeSkeleton extends Command
             $controller->check();
             $this->info('service skeleton '.$name.' create complete!');
         } catch (\Exception $e) {
-            $this->error($e);
+            $this->error($e->getMessage());
         }
     }
 
