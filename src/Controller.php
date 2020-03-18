@@ -55,7 +55,7 @@ class Controller
             $this->servicesProviderTemplate,
             $root . '/' . $this->serviceName . '/' . $this->serviceName . 'ServicesProvider.php',
             ['_SERVICE_', '_ROOT_'],
-            [$this->serviceName, $root]
+            [$this->serviceName, $this->root]
         );
 
         foreach ($this->dirControllers as $dirController) {

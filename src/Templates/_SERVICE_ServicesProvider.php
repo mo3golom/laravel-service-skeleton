@@ -27,6 +27,6 @@ class _SERVICE_ServicesProvider extends ServiceProvider
         \Route::middleware('api')
             ->prefix('api')
             ->namespace($this->namespace)
-            ->group(base_path('_ROOT_/_SERVICE_/Routes/api.php'));
+            ->group(base_path('app/_ROOT_/_SERVICE_/Routes/api.php'));
     }
 }
